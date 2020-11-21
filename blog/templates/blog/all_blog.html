@@ -1,0 +1,18 @@
+{% extends 'portfolio/base.html' %}
+{% block content %}
+
+HEllo bloggggg
+
+
+{% for zakariya in zak %}
+
+<a href="{% url 'blog:detail' zakariya.id %}"><h1>{{zakariya.title}}</h1></a>
+<p>{{zakariya.date}}</p>
+{{zakariya.description}}
+
+
+{% endfor %}
+
+{% endblock %}
+
+
